@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ron's 5-Star GP Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logowrapper" >
+    <img src="nabos.jpg" alt="">
+        <span>
+        <h1>Cumulative CGPA Calculator</h1>
+        <p>by Nabos 2023/2024</p>
+        </span>
+    </div>
+    <div class="dialog-wrapper" id="dialog-wrapper">
+        <div class="dialog">
+            <h5>Your Cumulative Grade Point is</h5>
+            <p class="gp" id="dialog-gp" ></p>
+            <div>   
+                <div class="wrapper">
+                <label>Total credits:</label>
+                <p class="credit" id="dialog-credit"></p>
+                </div>
+                <div class="wrapper">
+                <label>Total Grade Points:</label>
+                <p class="grade-point" id="dialog-grade-point"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="prevGPA" >
+    <h4>Previous Cumulative GPA</h4>
+<section>
+<div>
+    <label for="prevCGPA">Cumulative GPA</label>
+    <input type="text" name="PrevCGPA" id="GP" disabled placeholder="0.00">
+</div>
+<div>
+<label for="preCredits">Credits Earned</label>
+<input type="text" name="preCredits" id="Total-credits" disabled placeholder="000" >
+</div>
+</section>
+</div>
+
+<section>
+    <div>
+    <form class="newSemester" >
+            <h3>New Semester</h3>
+
+                <div class="labels" >
+                    <p class="cn" >Course Name</p>
+                    <p class="g" >Grade</p>
+                    <p class="u">Unit</p>
+                </div>
+                <div id="inputs-wrappers">
+                <div class="inputs-wrapper" id="inputs-wrapper">
+                <input type="text" name="course" placeholder="e.g MAT123">
+                <select name="grade" id="grade">
+                  <option value="">select grade</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                   <option value="F">F</option>
+                 </select>
+                <select name="unit" id="unit">
+                    <option value="" >select unit</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <iconify-icon class="icn-rm" id="del-course" icon="dashicons:remove"></iconify-icon>
+                </div>
+
+                </div>
+
+<article>
+    <button id="Add">
+<iconify-icon icon="gg:add"></iconify-icon>
+ Add Course
+    </button>
+    <button id="Clear">
+        <iconify-icon icon="material-symbols:cancel-outline"></iconify-icon>
+     Clear All
+    </button>
+
+</article>
+    </form>
+    </div>
+    
+</section>
+
+<section>
+    <article class="Buttons Container">
+        <div class="End">
+            <button id="Calc"> 
+                <iconify-icon class="icn" icon="lucide:calculator"></iconify-icon>
+                Calculate
+            </button>
+            <button id="Reset">
+                <iconify-icon class="icn" icon="system-uicons:reset"></iconify-icon>
+                Reset
+            </button>
+             </div>
+            <div class="Copyrights" >
+             </article>
+</section>
+</div>
+            <p class="foot" >&copy; copyright 2024, NABOS. All rights reserved.</p>
+            <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+            <script src="index.js" type="application/javascript"></script>
+</body>
+</html>
